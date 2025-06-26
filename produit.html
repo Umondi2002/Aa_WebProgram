@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>EliteShop - Produit</title>
+  <style>
+
+    body { font-family: Arial, sans-serif; margin: 0; background: #f9f9f9; }
+    header { background-color: #2c3e50; padding: 20px; color: white; text-align: center; }
+    nav a { margin: 0 15px; color: white; text-decoration: none; }
+    .hero { background: #34495e; padding: 80px 20px; color: white; text-align: center; }
+    .produits { display: flex; justify-content: space-around; margin: 40px 0; }
+    .produit { background: white; padding: 20px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); width: 30%; text-align: center; }
+    .produit button { padding: 10px 15px; background-color: #2ecc71; border: none; color: white; cursor: pointer; }
+    footer { background-color: #2c3e50; color: white; padding: 15px; text-align: center; }
+
+
+    body { font-family: Arial, sans-serif; margin: 0; background: #fdfdfd; }
+    header, footer { background-color: #2c3e50; color: white; padding: 20px; text-align: center; }
+    .produit-detail { max-width: 600px; margin: 50px auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 3px 6px rgba(0,0,0,0.1); text-align: center; }
+    .produit-detail button { margin-top: 20px; padding: 10px 20px; background: #e67e22; color: white; border: none; cursor: pointer; }
+    footer {
+  background-color: #2c3e50;
+  color: white;
+  padding: 40px 20px 20px;
+  font-family: sans-serif;
+}
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+.footer-section {
+  flex: 1 1 250px;
+  margin: 10px;
+}
+.footer-section h3,
+.footer-section h4 {
+  margin-bottom: 15px;
+  color: #ecf0f1;
+}
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-section li {
+  margin-bottom: 10px;
+}
+.footer-section a {
+  color: #bdc3c7;
+  text-decoration: none;
+}
+.footer-section a:hover {
+  text-decoration: underline;
+}
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 10px;
+  border-top: 1px solid #34495e;
+  font-size: 14px;
+}
+.social-icons a {
+  margin-right: 10px;
+}
+.social-icons img {
+  width: 24px;
+  height: 24px;
+}
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>À propos de EliteShop</h1>
+  <nav>
+  <a href="index.html">Accueil</a>
+  <a href="produit.html">Produit</a>
+  <a href="a_propos.html">À propos</a>
+  <a href="contact.html">Contact</a>
+  <a href="panier.html">Panier</a>
+</nav>
+
+</header><br>
+
+<img src="photo/Annonce Reduction.jpeg" alt="Annonce" width="1500"; height="600">
+  
+<h2 style="text-align: center;">Présatation des nos produits</h2>
+ <p style="text-align: center;">Ci-dessous nous présentons donc tous nos produits. Nos produis sont de bonne qualité et ils sont conservé dans des depot propre et bien securisé en fait de vous permettre d'etre satisfait de nos services.</p>
+<section class="produit-detail">
+  <h2>SmartPhone</h2>
+  <img src="photo/Téléphone.jpeg" alt="Smartphone" width="180">
+  <p>Parfait pour les photos et vidéos. Un smartphone fiable, rapide et abordable, pensé pour la vie de tous les jours.</p>
+  <p><strong>Prix :</strong> 256,99 $</p>
+  <button onclick="ajouterAuPanier()">Ajouter au panier</button>
+</section>
+<section class="produit-detail">
+  <h2>Appareil Photo</h2>
+  <img src="photo/Appareil photo.jpeg" alt="Smartphone" width="180">
+  <p>Capteur 24MP, zoom optique 10x, stabilisation intégrée et écran rotatif : l’outil parfait pour les passionnés d’image.</p>
+  <p><strong>Prix :</strong> 668,99 $</p>
+  <button onclick="ajouterAuPanier()">Ajouter au panier</button>
+</section>
+<section class="produit-detail">
+  <h2>Accessoire de Beautés</h2>
+  <img src="photo/Accessoire de beauté.jpeg" alt="Smartphone" width="180">
+  <p>Un coffret complet pour sublimer votre routine beauté – style, soin et confiance à portée de main.</p>
+  <p><strong>Prix :</strong> 25,99 $</p>
+  <button onclick="ajouterAuPanier()">Ajouter au panier</button>
+</section>
+<section class="produit-detail">
+  <h2>Casque Bloothooth</h2>
+  <img src="photo/Casque.jpeg" alt="Smartphone" width="180">
+  <p>Plongez dans votre musique avec un casque sans fil au design moderne et au son immersif.</p>
+  <p><strong>Prix :</strong> 345,99 $</p>
+  <button onclick="ajouterAuPanier()">Ajouter au panier</button>
+</section>
+
+<h3>N'hesitez pas à passer vos commandes chez nous, nous vous assurons que vous ne serez pas déçu nos sevices</h3>
+
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>EliteShop</h3>
+      <p>Votre destination shopping préférée depuis 2021. Qualité. Rapidité. Confiance.</p>
+    </div>
+    <div class="footer-section">
+      <h4>Liens rapides</h4>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="catalogue.html">Catalogue</a></li>
+        <li><a href="paiement.html">Paiement</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="condition.html">Condition</a></li>
+        <li><a href="connexion.html">Connexion</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Contact</h4>
+      <p>Email : contacteliteshop@gmail.com</p>
+      <p>Tél : +243 893 061 955</p>
+      
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2025 EliteShop. Tous droits réservés.
+  </div>
+</footer>
+
+<script>
+  function ajouterAuPanier() {
+    alert("Produit ajouté au panier !");
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>EliteShop - Accueil</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f9f9f9; }
+    header { background-color: #2c3e50; padding: 20px; color: white; text-align: center; }
+    nav a { margin: 0 15px; color: white; text-decoration: none; }
+    .hero { background: #34495e; padding: 80px 20px; color: white; text-align: center; }
+    .produits { display: flex; justify-content: space-around; margin: 40px 0; }
+    .produit { background: white; padding: 20px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); width: 30%; text-align: center; }
+    .produit button { padding: 10px 15px; background-color: #2ecc71; border: none; color: white; cursor: pointer; }
+    footer { background-color: #2c3e50; color: white; padding: 15px; text-align: center; }
+
+    footer {
+  background-color: #2c3e50;
+  color: white;
+  padding: 40px 20px 20px;
+  font-family: sans-serif;
+}
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+.footer-section {
+  flex: 1 1 250px;
+  margin: 10px;
+}
+.footer-section h3,
+.footer-section h4 {
+  margin-bottom: 15px;
+  color: #ecf0f1;
+}
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-section li {
+  margin-bottom: 10px;
+}
+.footer-section a {
+  color: #bdc3c7;
+  text-decoration: none;
+}
+.footer-section a:hover {
+  text-decoration: underline;
+}
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 10px;
+  border-top: 1px solid #34495e;
+  font-size: 14px;
+}
+.social-icons a {
+  margin-right: 10px;
+}
+.social-icons img {
+  width: 24px;
+  height: 24px;
+}
+.liste-produits {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 30px;
+}
+
+.produit {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  width: 250px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.produit img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+
+  </style>
+</head>
+<body onload="bienvenue()">
+
+<header>
+  <h1>EliteShop</h1>
+  <nav>
+  <a href="index.html">Accueil</a>
+  <a href="produit.html">Produit</a>
+  <a href="a_propos.html">À propos</a>
+  <a href="contact.html">Contact</a>
+  <a href="panier.html">Panier</a>
+  </nav>
+</header>
+<h3 style="
+  padding: 10px 20px;
+  border: 2px solid #e74c3c;
+  display: inline-block;
+  color: #2c3e50;
+  background-color: white;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;">Nos grands remerciement à notre mentor l'assistant Blaise en dévéloppement web à l'université de Kinshasa. Grace à ses précieux remarques par apport au sujet du projet qui nous a été confié, nous avons pu amélioré nos lancunes en web 1 et ainsi executé ce qui nous a été ordonné de faire. Merci très cher assistant !
+</h3>
+
+
+<h2 style="text-align: center;">Listes de nos produit en vedettes</h2>
+
+
+<section class="liste-produits">
+
+    <div class="produit">
+    <img src="photo/Appareil photo.jpeg" alt="Appareil Phto" width="180">
+    <h3>Appareil photo</h3>
+    <p></p>
+    <button onclick="voirProduit('Produit 3')">Voir</button>
+  </div>
+
+  <div class="produit">
+    <img src="photo/Lunette.jpeg" alt="Lunette" width="180">
+    <h3>Lunette</h3>
+    <p></p>
+    <button onclick="voirProduit('Produit 3')">Voir</button>
+  </div>
+
+  <div class="produit">
+    <img src="photo/Téléphone.jpeg" alt="Téléphone" width="180">
+    <h3>Téléphone</h3>
+    <p></p>
+    <button onclick="voirProduit('Produit 3')">Voir</button>
+  </div>
+
+</section>
+
+
+
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>EliteShop</h3>
+      <p>Votre destination shopping préférée depuis 2021. Qualité. Rapidité. Confiance.</p>
+    </div>
+    <div class="footer-section">
+      <h4>Liens rapides</h4>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="catalogue.html">Catalogue</a></li>
+        <li><a href="paiement.html">Paiement</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="condition.html">Condition</a></li>
+        <li><a href="connexion.html">Connexion</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Contact</h4>
+      <p>Email : contacteliteshop@gmail.com</p>
+      <p>Tél : +243 893 061 955</p>
+      
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2025 EliteShop. Tous droits réservés.
+  </div>
+</footer>
+
+
+<script>
+  function bienvenue() {
+    alert("Bienvenue sur EliteShop !");
+  }
+
+  function voirProduit(nom) {
+    alert("Vous avez cliqué sur " + nom);
+  }
+</script>
+
+</body>
+</html>
